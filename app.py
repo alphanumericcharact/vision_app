@@ -26,7 +26,7 @@ if uploaded_file:
     with st.expander("Image", expanded = True):
         st.image(uploaded_file, caption=uploaded_file.name, use_container_width=True)
 
-show_details = st.toggle("Pregunta algo específico sobre la imagen", value=False)
+show_details = st.toggle("Confirmar que quieres saber de que poligonaje es la imagen", value=False)
 
 if show_details:
     additional_details = st.text_area(
